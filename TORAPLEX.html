@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toraplex - Totora Viva</title>
+
+  <!-- Mismas hojas de estilo que tu index -->
+ <script src="js/assets/js/color-modes.js"></script>
+    <link href="js/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <link href="css/carousel.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/acordeon.css" rel="stylesheet" />
+
+  <!-- Fuentes (las mismas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR (copiado de tu index principal) -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index2.html">
+          <img src="img/logo_totoraviva.png" alt="Logo Totora" width="70%" height="70%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                aria-label="Menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mx-auto me-0 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index2.html#humedal">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link active" href="toraplex.html">TORAPLEX</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO TORAPLEX (imagen + texto centrado) -->
+    <div id="mainCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/textura_toraplex.jpg" class="d-block w-100" alt="Totora en humedal">
+            <div class="container">
+                <div class="carousel-caption text-center">
+                    <h1 class="h1-carrusel display-2 text-uppercase pb-5 fw-lighter">
+                        TORAPLEX
+                        <p class="d-block p1-complementario lh-1 fw-bolder">
+                            Diseñando desde la materia
+
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- 2. TEXTO INTRODUCTORIO -->
+    <section class="py-5">
+      <div class="container toraplex-narrow text-center">
+        <p class="lead text-body-dark">
+          biomaterial experimental hecho a partir de totora seca y residuos del trabajo artesanal de totoreros.
+        </p>
+      </div>
+    </section>
+<!-- Galería de 3 imágenes -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Columna izquierda - 2 imágenes -->
+            <div class="col-md-6">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="gallery-image-container">
+                            <img src="img/recepcion.png" alt="Descripción imagen 1" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="gallery-image-container">
+                            <img src="img/llaveros.png" alt="Descripción imagen 2" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna derecha - 1 imagen larga -->
+            <div class="col-md-6">
+                <div class="gallery-image-container h-100">
+                    <img src="img/carteles.jpeg" alt="Descripción imagen 3" class="img-fluid w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 4. TÍTULO “¿QUÉ ES TORAPLEX?” + TEXTO -->
+    <section class="py-5">
+      <div class="container toraplex-narrow text-center">
+        <h2 class="Titulos-pag text-uppercase mb-4">¿Qué es <strong>Toraplex</strong>?</h2>
+        <p class="lead text-body-dark">
+          Toraplex es un biomaterial experimental desarrollado a partir de totora seca y residuos del trabajo de los totoreros locales. Su objetivo es convertir la materia del humedal en una herramienta educativa y ecológica que visibilice el valor del territorio. 
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. PROPIEDADES: CUADRO GRANDE IZQUIERDA + 4 TIRAS DERECHA -->
+	  <section class="py-5">
+      <div class="container toraplex-narrow text-center">
+        <h2 class="Titulos-pag text-uppercase mb-4">¿Cuáles son sus PROPIEDADES?</h2>
+      </div>
+</section> 
+	  
+    <div class="section-magic-tabs">
+  <div class="magic-links_component">
+    <ul class="content_tabs-menu">
+<!--       <li class="how-it-works-title"><h2 class="heading-2">How it works</h2></li> -->
+      <li class="magic_list-item">
+        <div class="magic-tab current">
+          <button class="magic-tab_link"> RESISTENCIA AL AGUA</button>
+          <div class="text-content_wrapper">
+            <p class="magic-content-desc">Baja
+Toraplex es sensible a la humedad porque está compuesto de totora, gelatina y glicerina, materiales que absorben y se degradan con el agua. Esto afecta su forma, firmeza y durabilidad, por lo que debe sellarse o impermeabilizarse para aplicaciones más exigentes.
+
+</p>
+          </div>
+        </div>
+        <div class="magic-pane current">
+          <div class="magic-tab_image-wrapper">
+            <div class="magic-tab-step">
+             <img src="img/biomaterial_tres.jpg" alt="" class="step-svg">               
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="magic_list-item">
+        <div class="magic-tab">
+          <button class="magic-tab_link">RESISTENCIA AL FUEGO</button>
+          <div class="text-content_wrapper">
+            <p class="magic-content-desc">Baja
+Al ser un biomaterial orgánico, puede quemarse o deformarse con altas temperaturas. No resiste el fuego de manera natural, por lo que no es adecuado para entornos con riesgo térmico sin tratamientos ignífugos.
+
+</p>
+          </div>
+        </div>
+        <div class="magic-pane">
+          <div class="magic-tab_image-wrapper">
+            <div class="magic-tab-step"><img src="img/biomaterial_cuatro.JPG" alt="" class="step-svg"></div>
+          </div>
+        </div>
+      </li>
+      <li class="magic_list-item">
+        <div class="magic-tab">
+          <button class="magic-tab_link">DUREZA</button>
+          <div class="text-content_wrapper">
+            <p class="magic-content-desc">Media
+Tiene una resistencia aceptable frente a golpes o presión leve, pero no soporta cargas estructurales. Su dureza moderada permite manipulación en láminas sin romperse fácilmente, pero si se exige mucho esfuerzo mecánico, se fisura.</p>
+          </div>
+        </div>
+        <div class="magic-pane">
+          <div class="magic-tab_image-wrapper">
+            <div class="magic-tab-step"><img src="img/biomaterial_ancho.JPG" alt="" class="step-svg"></div>
+          </div>
+        </div>
+      </li>
+	  <li class="magic_list-item">
+        <div class="magic-tab">
+          <button class="magic-tab_link">MALEABILIDAD</button>
+          <div class="text-content_wrapper">
+            <p class="magic-content-desc">Media/baja
+Aunque no es completamente rígido, se quiebra si se dobla en exceso. Puede adaptarse a formas planas o curvas suaves, pero no permite grandes deformaciones, lo que limita su uso en geometrías complejas.
+
+</p>
+          </div>
+        </div>
+        <div class="magic-pane">
+          <div class="magic-tab_image-wrapper">
+            <div class="magic-tab-step"><img src="img/biomaterial_cinco.JPG" alt="" class="step-svg"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+	  </div>
+	  <br><br>
+
+   <div style="background: #F0F0E9">
+		<div class="container">
+	<div class="row">
+	    <br/>
+	   <div class="col-lg-10 col-md-10 mx-auto" align="center">
+		<h1><br>PROCESO DE ELABORACIÓN<br></h1>
+		<p class="lead text-body-dark">Toraflex se elabora mezclando totora seca con gelatina, glicerina y benzoato de sodio. Su estado fibroso la vuelve más rígida, y un secado cuidadoso asegura cohesión y durabilidad.
+</p><br>
+		</div>
+		
+             
+		
+	</div>
+		<div class="row text-center" >
+	        <div class="col">
+	        <div class="counter">
+      <i class="fa-solid fa-seedling fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+				 <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 1
+                        </p>
+       <p class="count-text ">0:00–3:00 Calentar agua y añadir gelatina poco a poco, revolviendo siempre para evitar grumos.</p>
+    </div>
+	        </div>
+              <div class="col">
+               <div class="counter">
+      <i class="fa-solid fa-crow fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+				    <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 2
+                        </p>
+      <p class="count-text ">8:00 Incorporar glicerina con cuidado, manteniendo agitación constante y evitando burbujas.</p>
+    </div>
+              </div>
+              <div class="col">
+                  <div class="counter">
+      <i class="fa fa-route fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+					  <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 3
+                        </p>
+      <p class="count-text ">10:00 Añadir benzoato de sodio espolvoreado y mezclar bien hasta lograr completa disolución.</p>
+    </div></div>
+              <div class="col">
+              <div class="counter">
+      <i class="fa fa-leaf fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+				   <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 4
+                        </p>
+      <p class="count-text ">12:00 Agregar totora molida por porciones y batir más rápido hasta obtener mezcla uniforme.</p>
+    </div>
+              </div>
+			
+         </div>
+</div>
+		 </div>
+		 <div style="background: #F0F0E9">
+		<div class="container">
+	<div class="row">
+	    <br/>		
+	</div>
+		<div class="row text-center" >
+	        <div class="col">
+	        <div class="counter">
+      <i class="fa-solid fa-seedling fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+				 <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 5
+                        </p>
+       <p class="count-text ">15:00 Verter la mezcla en el molde y esparcir homogéneamente para lograr una capa uniforme y estable.</p>
+    </div>
+	        </div>
+              <div class="col">
+               <div class="counter">
+      <i class="fa-solid fa-crow fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+				    <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 6
+                        </p>
+      <p class="count-text ">24h Secado inicial dejando el molde ventilado sin sol directo, evitando humedad y acumulación.</p>
+    </div>
+              </div>
+              <div class="col">
+                  <div class="counter">
+      <i class="fa fa-route fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+					  <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 7
+                        </p>
+      <p class="count-text ">Día 2 Desmoldar con mucho cuidado y prensar entre planchas lisas aplicando peso firme y uniforme.</p>
+    </div></div>
+              <div class="col">
+              <div class="counter">
+      <i class="fa fa-leaf fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+				   <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PASO 8
+                        </p>
+      <p class="count-text ">2 semanas Mantener el material prensado en lugar fresco revisando planitud diaria hasta secado.</p>
+    </div>
+              </div>
+			
+         </div>
+</div>
+		   <br><br></div>
+    <!-- 7. TEXTO DE CIERRE -->
+    <section class="py-4">
+      <div class="container toraplex-narrow text-center">
+         <p class="lead text-body-dark">
+          Más que un material, Toraplex es un dispositivo de comunicación: a través de su textura, su origen y su presencia en el espacio, hace visible la relación entre humedal, comunidad y diseño. La materia se vuelve mensaje.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: puedes copiar el mismo de tu index principal si quieres reutilizarlo tal cual -->
+  <footer class="mt-5" style="background: #F0F0E9;">
+    <div class="container py-4 text-center">
+      <small>Totora Viva - Proyecto de conservación de humedales<br>
+      Diseño UC - Pontificia Universidad Católica de Chile</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (bundle incluye Popper) -->
+    <script src="js/assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+
+    <!-- jQuery (si lo necesitas para otras cosas) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Tu JS personalizado (si realmente lo usas) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+ 

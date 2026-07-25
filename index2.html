@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio web sobre la totora y su importancia en los humedales">
+    <title>Totora - Humedales</title>
+    
+    <!-- Hojas de estilo -->
+    <link href="js/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/acordeon.css" rel="stylesheet">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <meta name="theme-color" content="#712cf9">
+    
+    <style>
+        /* Prevenir desbordamiento horizontal */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: #0000001a;
+            border: solid rgba(0, 0, 0, 0.15);
+            border-width: 1px 0;
+            box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+        }
+        
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+        
+        .bi {
+            vertical-align: -0.125em;
+            fill: currentColor;
+        }
+        
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_totoraviva.png" alt="Logo Totora" width="70%" height="70%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mx-auto me-0 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#mainCarousel">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#humedal">TOTORA</a></li>
+                        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#biomaterial" id="proyectosDropdown"
+     role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    PROYECTOS
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="proyectosDropdown">
+
+    <!-- Opción que lleva a la página anexa -->
+    <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
+	   <li><a class="dropdown-item" href="TORAPLEX.html">Toraplex</a></li>
+
+    <!-- Puedes agregar más proyectos -->
+    <!-- <li><a class="dropdown-item" href="#otroProyecto">Otro proyecto</a></li> -->
+  </ul>
+</li>
+
+                        <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <div id="mainCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-inner"> 
+        <div class="carousel-item active">
+            <img src="img/04.jpeg" class="d-block w-100" alt="Totora en humedal">
+            <div class="container">
+                <div class="carousel-caption text-center">
+                    <h1 class="h1-carrusel display-2 text-uppercase pb-5 fw-lighter">
+                        TOTORA VIVA
+                        <p class="d-block p1-complementario lh-1 fw-bolder">
+                            Valorizar la totora como un agente identitario
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <section id="humedal" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-11 col-md-11 mx-auto text-center">
+                        <h1 class="Titulos-pag text-uppercase mb-4">¿QUÉ ES LA <strong>TOTORA</strong>?</h1>
+                        <p class="lead text-body-dark">
+                            La totora (Schoenoplectus californicus) es una planta acuática que crece en los bordes de los humedales y cuerpos de agua. Su estructura tubular le permite vivir en suelos saturados y absorber contaminantes, contribuyendo al equilibrio del ecosistema. Su presencia no solo sostiene gran parte del equilibrio ecológico del humedal, sino que también es un material de profundo significado cultural. Ligera, flexible y resistente, la totora ha sido utilizada históricamente para elaborar artesanías y objetos cotidianos. En los humedales, actúa como filtro natural del agua, refugio de fauna y elemento simbólico que conecta la identidad local con el paisaje. Su valor ecosistémico, sus propiedades físicas y su rol en la artesanía tradicional la convierten en un verdadero material identitario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <div style="background: #F0F0E9">
+		<div class="container">
+	<div class="row">
+	    <br/>
+	   <div class="col-lg-11 col-md-11 mx-auto" align="center">
+		<h1><br>
+	     PROPIEDADES<br></h1>
+		<p class="lead text-body-dark">La totora es resistente, flexible y renovable, con un importante rol ecológico en los humedales. Sus propiedades la hacen ideal para usos artesanales y materiales.</p>
+		<br>
+		</div>
+		
+             
+		
+	</div>
+		<div class="row text-center" >
+	        <div class="col">
+	        <div class="counter">
+      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+				  <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PURIFICACIÓN DEL AGUA
+                        </p>
+       <p class="count-text ">Filtra sedimentos y contaminantes del agua, contribuyendo a mantener saludable el ecosistema del humedal.</p>
+    </div>
+	        </div>
+              <div class="col">
+               <div class="counter">
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+				     <p class="d-block p1-complementario lh-1 fw-bolder">
+                            FIBRA RESISTENTE Y FLEXIBLE
+                        </p>
+      <p class="count-text">Su estructura ligera y elástica ofrece una fibra resistente y flexible, ideal para diversos usos artesanales.</p>
+    </div>
+              </div>
+              <div class="col">
+                  <div class="counter">
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+					    <p class="d-block p1-complementario lh-1 fw-bolder">
+                            CRECIMIENTO RENOVABLE
+                        </p>
+      <p class="count-text ">Su crecimiento rápido permite una extracción sostenible, que asegura la disponibilidad continua de material.</p>
+    </div></div>
+              <div class="col">
+              <div class="counter">
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+				  <p class="d-block p1-complementario lh-1 fw-bolder">
+                            AISALACIÓN NATURAL
+                        </p>
+      <p class="count-text ">Sus fibras retienen aire y proporcionan aislamiento térmico y acústico, mejorando su utilidad en materiales.</p>
+    </div>
+              </div>
+			 <div class="col">
+              <div class="counter">
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+				   <p class="d-block p1-complementario lh-1 fw-bolder">
+                            PATRIMONIO CULTURAL
+                        </p>
+      <p class="count-text ">Material ligado a saberes locales y tradiciones culturales, formando parte esencial de la identidad territorial.</p>
+    </div>
+              </div>
+         </div>
+</div>
+		   <br><br></div>
+	
+	  <section id="humedal" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 mx-auto text-center">
+                        <h1 class="Titulos-pag text-uppercase mb-4">¿DONDE SE ENCUENTRA?</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+	<div class="col-12">
+                <div class="col-12">
+   <div id="carouselHumedales" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/03.jpeg" class="d-block w-100" alt="...">
+                            <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+									 <div class="container">
+              
+										 <div class="container">
+                
+											  <div class="carousel-caption text-center">
+                    <h1 class="h1-carrusel display-2 text-uppercase pb-5 fw-lighter">
+						Humedal O'Higgins <p class="d-block p1-complementario lh-1 fw-bolder">Humedal San Luis, Humedal San Luis Norte (Quilicura)</p>
+                    </h1>
+                </div>
+            </div>
+            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/humedal_rio_maipo.jpeg" class="d-block w-100" alt="...">
+                            <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                </div>
+								 <div class="container">
+                <div class="carousel-caption text-center">
+                    <h1 class="h1-carrusel display-2 text-uppercase pb-5 fw-lighter">
+						Humedal Río Maipo <p>&nbsp;</p>
+                    </h1>
+                </div>
+            </div>
+                            </div>
+                        </div>
+						<div class="carousel-item">
+                            <img src="img/humedal-mantagua.jpg" class="d-block w-100" alt="...">
+                            <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                </div>
+								 <div class="container">
+                <div class="carousel-caption text-center">
+                    <h1 class="h1-carrusel display-2 text-uppercase pb-5 fw-lighter">
+                        Humedal de Mantagua<p>&nbsp;</p>
+                    </h1>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                        
+						
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHumedales" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHumedales" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+	
+  <section id="humedal" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 mx-auto text-center">
+                        <p class="lead text-body-dark">
+                            La totora (Schoenoplectus californicus) es una planta acuática que crece en los bordes de los humedales y cuerpos de agua. Su estructura tubular le permite vivir en suelos saturados y absorber contaminantes, contribuyendo al equilibrio del ecosistema. Su presencia no solo sostiene gran parte del equilibrio ecológico del humedal, sino que también es un material de profundo significado cultural.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+        <div class="container">
+            <main class="page-content">
+                <div class="d_card">
+                    <div class="content">
+                        <h2 class="heading">IMPORTANCIA ECOSISTÉMICA</h2>
+                        <p class="data-content">La totora cumple un rol clave en los humedales al filtrar y purificar el agua, estabilizar los suelos y proporcionar refugio y alimento a diversas especies. Su presencia mejora la salud del ecosistema, regula el flujo hídrico y contribuye al equilibrio natural del humedal.</p>
+                    </div>
+                </div>
+                <div class="d_card">
+                    <div class="content">
+                        <h2 class="heading">IMPORTANCIA CULTURAL</h2>
+                        <p class="data-content">Históricamente, la totora ha sido un material identitario para distintas comunidades, vinculada a oficios artesanales, técnicas tradicionales y memorias locales. Su uso refleja una relación profunda entre territorio, saberes comunitarios y prácticas sostenibles que se han transmitido por generaciones.</p>
+                    </div>
+                </div>
+            </main>
+        </div><br><br>
+        
+        <div class="row" style="margin-left: 4.5%; margin-right: 4.5%" >
+            <div class="col-6">
+                <div id="Artesania" class="carousel slide mb-6" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/bote_totora.jpg" class="d-block w-100" alt="...">
+                            <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/silla totora.jpg" class="d-block w-100" alt="...">
+                            <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/texturas_totora.jpg" class="d-block w-100" alt="...">
+                            <svg aria-hidden="true" class="bd-placeholder-img" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Artesania" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#Artesania" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="col-lg-10 col-md-10 mx-auto align-items-center" align="center"> 
+                  <br>  <h1 class="fw-dark text-uppercase"><br>ARTESANÍA</h1> <br>
+                    <p class="lead text-body-dark">La artesanía en totora es una práctica tradicional transmitida por generaciones, donde artesanos y artesanas trabajan la fibra mediante técnicas de tejido y trenzado para crear canastos, esteras, cuerdas y diversos objetos utilitarios. Más que un oficio, representa un patrimonio cultural que conserva saberes locales y una forma sostenible de relacionarse con el territorio. Cada pieza refleja la identidad del humedal, la memoria comunitaria y el vínculo histórico entre las personas y este recurso natural.</p>
+                </div>
+            </div>
+        </div>
+		 <section class="py-5">
+      <div class="container toraplex-narrow text-center">
+        <h2 class="Titulos-pag text-uppercase mb-4">PROCESO DE RECOLECCIÓN DE LA TOTORA</h2>
+      </div>
+</section> 
+       <video width="100%" height="100%" controls autoplay loop muted>
+  <source src="img/Yampu, Atacama en totora 01_ Recolección y elaboración de la totora.mp4" type="video/mp4"> 
+</video><br><br><br>
+	
+		
+        <div class="row" style="margin-left: 4.5%; margin-right: 4.5% ">
+			
+            <div class="col-6">
+                <img src="img/residuos.png" class="img-fluid" alt="...">
+            </div>
+			
+            <div class="col-6">
+                <div class="col-lg-10 col-md-10 mx-auto" align="center">
+                    <h1 class="fw-dark text-uppercase"><br>RESIDUOS</h1> <br>
+                    <p class="lead text-body-dark">Durante la recolección de totora se genera residuo vegetal que se suma al material que la planta descarta en el humedal. Aunque es parte del ecosistema, su acumulación puede aumentar por falta de manejo. Estos excedentes ofrecen una oportunidad para transformarlos en nuevos usos sin afectar el equilibrio del humedal.</p>
+                </div>
+            </div>
+        </div>
+        <div id="proyectos" class="container-fluid">
+            <div class="row"> 
+                <div class="col-lg-11 col-md-11 mx-auto" align="center"> 
+                    <h1><br>PROYECTOS</h1> <br>
+                    <p class="lead text-body-dark">“En Totora Viva, entendemos la totora como algo más que una planta: es una materia viva que guarda memoria del humedal y de quienes lo habitan. A partir de ella nace Toraplex, un biomaterial que busca comunicar, cuidar y habitar el territorio desde el diseño.”</p><br>
+                </div>
+          </div>
+            
+		  <section class="toraplex-hero-box"
+         style="background-image: url('img/biomaterial_tres.jpg');margin-left: 4.8%; margin-right: 4.8%;">&lt;
+
+    <br><br><br><br><br><div class="toraplex-hero-content text-center">
+        <h2><br>TOTORAPLEX: DESEÑANDO DESDE LA MATERIA</h2>
+<div style="margin-left: 4.5%; margin-right: 4.5%"><toraplex>“En Totora Viva, entendemos la totora como algo más que una planta: es una materia viva que guarda memoria del humedal y de quienes lo habitan. A partir de ella nace Toraplex, un biomaterial que busca comunicar, cuidar y habitar el territorio desde el diseño.”
+<br><br></toraplex>
+			  
+			  
+
+       <div class="d-grid gap-1 col-6 mx-auto">
+ <a class="btn btn-primary" href="TORAPLEX.html">Conoce Toraplex</a>
+</div>
+<br><br><br><br><br><br>
+    </div>
+
+</section><br>
+
+
+            <div class="container-2 d-flex align-items-center justify-content-center flex-wrap">
+                <div class="box">
+                    <div class="body">
+                        <div class="imgContainer-2">
+                            <img src="img/proyecto1.jpeg" alt="">
+                        </div>
+                        <div class="content-2 d-flex flex-column align-items-center justify-content-center">
+                            <div>
+                                <h3 class="text-white fs-5" align="center">PROTECCIÓN KURA, TEJIENDO REFUGIOS EN COMUNIDAD</h3>
+                                <p class="fs-6 text-white" align="center">Meleck Reinike, Carolina Guzman, Dominga Llorens.</p> 
+								<P class="fs-6 text-white" align="center">Crear talleres con la comunidad para construir refugios y aprender técnicas tradicionales. Fortalecer el vínculo humano–humedal mediante participación activa y educación ecológica.</P>
+								 <h3 class="text-white fs-5" align="center">COLABORACIÓN, EXPERIENCIA, RECONOCIMIENTO</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="body">
+                        <div class="imgContainer-2">
+                            <img src="img/proyecto2.png" alt="">
+                        </div>
+                        <div class="content-2 d-flex flex-column align-items-center justify-content-center">
+                            <div>
+                                <h3 class="text-white fs-5" align="center">UMBRAL DEL ESTERO</h3>
+                                <p class="fs-6 text-white" align="center">Bernardita Valdés, Rosario Carvallo, María de los Ángeles Larraguibel, María Jesús Quintana</p> 
+								<P class="fs-6 text-white" align="center">Esta entrada es un espacio transitable que potencia la atracción por el humedal y la conciencia de cuidado, como un espacio que es propio entre los vecinos.</P>
+								 <h3 class="text-white fs-5" align="center">TRANSITABLE, REFUGIO ECOLÓGICO, ACOGERDOR</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="body">
+                        <div class="imgContainer-2">
+                            <img src="img/proyecto3.jpeg" alt="">
+                        </div>
+                        <div class="content-2 d-flex flex-column align-items-center justify-content-center">
+                            <div>
+                                <h3 class="text-white fs-5" align="center">MÓDULO CHAKANA</h3>
+                                <p class="fs-6 text-white" align="center">Francisca Larraín, Isidora León, Constanza Perelló, María Paz Tapia</p> 
+								<P class="fs-6 text-white" align="center">Módulo de descanso, observación y educación que conecta la comunidad con el humedal. Mirador frente al centro ceremonial, de madera y pared con forma de Chakana, integra constelaciones para unir mundo terrenal y espiritual.</P>
+								 <h3 class="text-white fs-5" align="center">MIRADOR, CONSTELACIONES, VISIBILIZAR</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <footer class="mt-5" style="background: #F0F0E9; overflow-x: hidden;">
+    <div class="container py-4">
+        <div class="row g-4">
+            <!-- Logo y descripción -->
+            <div id="contacto" class="col-lg-3 col-md-6">
+                <div class="mb-4">
+                    <h4 class="text-uppercase fw-bold mb-3" style="color: #565B3D;">Totora Viva</h4>
+                    <p style="color: #565B3D;">Promoviendo la conservación y valorización de la totora en los humedales de Quilicura.</p>
+                </div>
+            </div>
+
+            <!-- Menú rápido -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="mb-3" style="color: #565B3D; font-weight: 600;">Menú</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#mainCarousel" class="text-decoration-none" style="color: #565B3D;">Inicio</a></li>
+                    <li class="mb-2"><a href="#humedal" class="text-decoration-none" style="color: #565B3D;">Sobre la Totora</a></li>
+                    <li class="mb-2"><a href="TORAPLEX.html" class="text-decoration-none" style="color: #565B3D;">Toraplex&nbsp;</a></li>
+                    <li class="mb-2"><a href="#contacto" class="text-decoration-none" style="color: #565B3D;">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-3" style="color: #565B3D; font-weight: 600;">Contacto</h5>
+                <ul class="list-unstyled" style="color: #565B3D;">
+                    <li class="mb-2">
+                        <i class="fas fa-envelope me-2"></i> totoraviva@gmail.com
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-phone me-2"></i> +56 9 1234 5678
+                    </li>
+                </ul>
+                <div class="mt-3">
+                    <h5 class="mb-3" style="color: #565B3D; font-weight: 600;">Síguenos</h5>
+                    <a href="#" class="me-3" style="color: #565B3D;"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="me-3" style="color: #565B3D;"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" style="color: #565B3D;"><i class="fab fa-youtube fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Colaboradores -->
+            <div class="col-lg-4 col-md-6">
+                <h5 class="mb-3" style="color: #565B3D; font-weight: 600;">En colaboración con</h5>
+                <div class="row g-3">
+                    <div class="col-6 col-sm-4">
+                       <a href="https://mma.gob.cl/" target="_blank"> <img src="img/logo-mma.jpg"  alt="Ministerio del Medio Ambiente" class="img-fluid" style="max-height: 60px;">
+                    </a></div>
+                    <div class="col-6 col-sm-4">
+                        <a href="https://ww2.muniquilicura.cl/" target="_blank"><img src="img/logo_quilicura.png" alt="Municipalidad de Quilicura" class="img-fluid" style="max-height: 60px;">
+						</a></div>
+                    <div class="col-6 col-sm-4">
+                        <a href="https://fundacionkennedy.cl/" target="_blank"><img src="img/logo_kennedy.png" alt="Fundación Kennedy" class="img-fluid" style="max-height: 60px;">
+						</a></div>
+                    <div class="col-6 col-sm-4">
+                         <a href="https://www.uc.cl/" target="_blank"><img src="img/logo_uc.png" alt="Pontificia Universidad Católica" class="img-fluid" style="max-height: 60px;">
+						</a></div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-color: #565B3D; opacity: 0.2;">
+
+        <!-- Derechos de autor -->
+        <div class="text-center pt-3 mt-3">
+            <p class="mb-0" style="color: #565B3D; font-size: 0.9rem;">
+                Totora Viva - Proyecto de conservación de humedales<br>
+                <span style="color: #565B3D;">Diseño UC - Pontificia Universidad Católica de Chile</span>
+            </p>
+        </div>
+    </div>
+</footer>
+    </main>
+        <!-- Bootstrap JS (bundle incluye Popper) -->
+    <script src="js/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery (si lo necesitas para otras cosas) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Tu JS personalizado (si realmente lo usas) -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
